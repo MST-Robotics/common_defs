@@ -1,7 +1,7 @@
 #ifndef ENUM_H
 #define ENUM_H
 
-typedef enum { // defined as arduino pins, not proc pins
+enum PINS { // defined as arduino pins, not proc pins
   MAIN_M0 = 4,
   MAIN_M1 = 5,
   MAIN_M2 = 2,
@@ -16,9 +16,9 @@ typedef enum { // defined as arduino pins, not proc pins
   MAIN_VID1_0 = 25, // bit 0 of video feed 1 selection
   MAIN_VID1_1 = 26,
   MAIN_VID1_2 = 27
-}PINS;
+};
 
-typedef enum {
+enum ADDRESSES {
   MAIN = 0x00,
   PWR,
   SURFACE,
@@ -26,11 +26,11 @@ typedef enum {
   ARM,
   GRPR,
   MINI_ROV
-} ADDRESSES;
+};
 
-typedef enum {
+enum E_SIGNALS {
   E_STOP = 0x00,
   WATER
-} E_SIGNALS;
+};
 
 #endif
