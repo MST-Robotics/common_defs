@@ -29,8 +29,8 @@ enum ADDRESSES {
 };
 
 enum E_SIGNALS {
-  E_STOP = 0x00,
-  WATER
+  E_STOP = 'X',
+  WATER = 0x00
 };
 
 #endif
